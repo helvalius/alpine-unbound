@@ -5,6 +5,9 @@ RUN apk add --update unbound ; \
 
 VOLUME /etc/unbound
 
-#RUN unbound-checkconf
+EXPOSE 53
 
-CMD ["unbound"]
+#RUN unbound-checkconf
+ENTRYPOINT ["unbound"]
+
+CMD ["-d"]
