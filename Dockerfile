@@ -3,7 +3,7 @@ FROM alpine:3.3
 RUN apk add --update unbound ; \  
     rm -rf /var/cache/apk/* ;
 
-VOLUME /etc/unbound
+VOLUME /etc/unbound/unbound.conf
 
 EXPOSE 53
 
