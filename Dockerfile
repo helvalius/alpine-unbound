@@ -7,7 +7,4 @@ VOLUME /etc/unbound
 
 EXPOSE 53
 
-#RUN unbound-checkconf
-ENTRYPOINT ["unbound"]
-
-CMD ["-d"]
+CMD ["unbound", "-d"]
